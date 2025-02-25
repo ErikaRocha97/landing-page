@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/home.css" />
+    <link rel="stylesheet" href="src/styles/menu.css" />
+    <link rel="stylesheet" href="src/styles/testimonials.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <!-- barra de navegação -->
+        <i class="fa-solid fa-burger" id="nav_logo"> food</i>
+        <ul id="nav_list">
+          <li class="nav-item active">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+
+        <button class="btn-default">Peça aqui</button>
+        <button id="mobile_btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      <!-- Menu mobile -->
+      <div id="mobile_menu">
+        <ul id="mobile_nav_list">
+          <li class="nav-item">
+            <a href="#home">Início</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu">Cardápio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials">Avaliações</a>
+          </li>
+        </ul>
+        <button class="btn-default">Peça aqui</button>
+      </div>
+    </header>
+
+    <main id="content">
+      <!-- seções: início, cardápio e avaliações -->
+      <section id="home">
+        <!-- forma no fundo -->
+        <div class="shape"></div>
+        <div id="cta">
+          <!--  -->
+          <h1 class="title">O sabor que vai até <span>você</span></h1>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            accusamus quisquam, alias magnam eveniet nisi, officiis temporibus
+            eaque error voluptas, obcaecati ipsam culpa reprehenderit tempora
+            labore minima laudantium cumque excepturi.
+          </p>
+
+          <div id="cta_buttons">
+            <a href="#" class="btn-default">Ver Cardápio</a>
+
+            <a href="tel:+551199999999" id="phone_button"
+              ><button class="btn-default">
+                <i class="fa-solid fa-phone"></i></button
+              >(11) 99999-9999</a
+            >
+          </div>
+
+          <div class="social-media-buttons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <div id="banner">
+          <!--  -->
+          <img src="src/images/hero.png" alt="" />
+        </div>
+      </section>
+      <!-- SEÇÃO MENU -->
+      <section id="menu">
+        <!-- título, subtítulo e pratos -->
+        <h2 class="section-title">Cardárpio</h2>
+        <h3 class="subtitle">Nossos pratos especiais</h3>
+        <!-- div que vai englobar todos os pratos -->
+        <div id="dishes">
+          <!-- PRATO 1 -->
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Loren Ipsun</h3>
+            <span class="dish-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!-- PRATO 2 -->
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish2.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Loren Ipsun</h3>
+            <span class="dish-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!-- PRATO 3 -->
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish3.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Loren Ipsun</h3>
+            <span class="dish-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <!-- PRATO 4 -->
+          <div class="dish">
+            <div class="dish-heart">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <img src="src/images/dish4.png" class="dish-image" alt="" />
+            <h3 class="dish-title">Loren Ipsun</h3>
+            <span class="dish-description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </span>
+            <div class="dish-rate">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(500+)</span>
+            </div>
+            <div class="dish-price">
+              <h4>R$20,00</h4>
+              <button class="btn-default">
+                <i class="fa-solid fa-basket-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- AVALIAÇÕES -->
+      <section id="testimonials">
+        <!-- dividir em 2 partes -->
+        <img src="src/images/chef.png" id="testimonial_chef" alt="" />
+        <div id="testimonials_content">
+          <!-- ! section-subtitle com erro -->
+          <h2 class="section-title">Depoimentos</h2>
+          <h3 class="section-subtitle">O que os clientes falam sobre nós</h3>
+
+          <div id="feedbacks">
+            <div class="feedback">
+              <img src="src/images/avatar.png" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  Nome do Cliente
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil quis sunt facere odit temporibus, fuga itaque,
+                  voluptatem deleniti adipisci laborum commodi quae ad veritatis
+                  ex dolorem magnam a. Aliquam, error."
+                </p>
+              </div>
+            </div>
+
+            <div class="feedback">
+              <img src="src/images/avatar.png" class="feedback-avatar" alt="" />
+              <div class="feedback-content">
+                <p>
+                  Nome do Cliente
+                  <span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </span>
+                </p>
+                <p>
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nihil quis sunt facere odit temporibus, fuga itaque,
+                  voluptatem deleniti adipisci laborum commodi quae ad veritatis
+                  ex dolorem magnam a. Aliquam, error."
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="btn-default">Ver mais avaliações</button>
+        </div>
+      </section>
+    </main>
+
+    <!-- importar javascript no final -->
+    <script src="src/javascript/script.js"></script>
+  </body>
+</html>

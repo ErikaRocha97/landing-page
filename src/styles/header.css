@@ -1,0 +1,89 @@
+header {
+  width: 100%;
+  padding: 29px 8%;
+  /* fixar menu */
+  position: sticky;
+  top: 0;
+  background-color: #fff9ea;
+  /* ficar na frente */
+  z-index: 3;
+}
+
+#navbar {
+  width: 100%;
+  /* display flex vai deixar os itens lado a lado */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* customizar o logo */
+
+#nav_logo {
+  font-size: 24px;
+  color: #e9a209;
+}
+
+#nav_list {
+  display: flex;
+  /* list-style tira a bolinha */
+  list-style: none;
+  /* gap: espaçamento entre os elementos */
+  gap: 48px;
+}
+
+/* estilizar cada item */
+.nav-item a {
+  text-decoration: none;
+  color: #1d1d1dad;
+  font-weight: 600;
+}
+
+/* adicionar sublinhado quando a seta estiver sobre o item */
+/* vai usar javascript */
+.nav-item.active a {
+  color: #1d1d1d;
+  border-bottom: 3px solid #ffe100;
+}
+
+/* esconder a versão mobile */
+#mobile_btn {
+  display: none;
+}
+
+#mobile_menu {
+  display: none;
+}
+
+/* quando o tamanho for x, mostrar a versão mobile */
+@media screen and (max-width: 1170px) {
+  #nav_list,
+  #navbar .btn-default {
+    display: none;
+  }
+  #mobile_btn {
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  /* o botão vai funcionar com JQUERY */
+  #mobile_menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mobile_nav_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 12px 0px;
+  }
+
+  #mobile_nav_list .nav-item {
+    list-style: none;
+    text-align: center;
+  }
+}
