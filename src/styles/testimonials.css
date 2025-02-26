@@ -15,7 +15,7 @@
   font-size: 3rem;
 }
 
-#testimponials_content {
+#testimonials_content {
   width: 50%;
 }
 
@@ -53,6 +53,8 @@
   color: #e9a209;
 }
 
+/* RESPONSIVIDADE */
+
 @media screen and (max-width: 1170px) {
   #testimonials {
     /* column: um abaixo do outro */
@@ -63,8 +65,7 @@
       display: none;
     }
 
-    /* ! Não está funcionando */
-    #testimonials .section-subtitle {
+    .section-subtitle {
       text-align: center;
       font-size: 2.5rem;
     }
@@ -75,13 +76,14 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      /* text-align: center; */
     }
   }
 }
 
 @media screen and (max-width: 600px) {
   /* ! Não está funcionando */
-  #testimonials .section-subtitle {
+  .section-subtitle {
     font-size: 2rem;
   }
 

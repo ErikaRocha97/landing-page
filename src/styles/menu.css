@@ -50,6 +50,7 @@
   text-align: center;
 }
 
+/* ícone */
 .dish-rate i {
   color: #e9a209;
 }
@@ -71,7 +72,7 @@
   }
 
   .dish {
-    /* calculo para diminur o gap */
+    /* calculo para diminur o gap: cada card vai ocupar 50% */
     width: calc(50% - 12px);
   }
 }
